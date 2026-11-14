@@ -1,0 +1,42 @@
+/* Ammar Ahmed - Portfolio | style.css */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,Arial,sans-serif}
+:root{--pink:#ff2e88;--orange:#ff7a18;--purple:#7c3aed;--dark:#0f0f1a;--card:#ffffff;--muted:#666}
+body{background:#fff5f8;color:#222;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{max-width:1100px;margin:auto;padding:0 20px}
+/* HERO */
+.hero{background:linear-gradient(135deg,#ff2e88,#ff7a18,#7c3aed);color:#fff;padding:50px 0 60px;text-align:center}
+.hero img.profile{width:170px;height:170px;object-fit:cover;border-radius:50%;border:6px solid #fff;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.hero h1{font-size:52px;letter-spacing:1px;margin-top:15px}
+.hero h1 span{color:#ffe600}
+.hero p.tagline{font-size:20px;opacity:.95;margin:8px 0 20px}
+.btn{display:inline-block;background:#fff;color:#ff2e88;font-weight:700;padding:12px 26px;border-radius:30px;margin:5px}
+.btn.dark{background:#111;color:#fff}
+.btn.live{background:linear-gradient(90deg,#ff2e88,#ff7a18);color:#fff}
+/* SECTIONS */
+section{padding:50px 0}
+h2{font-size:32px;text-align:center;margin-bottom:8px}
+h2 span{color:var(--pink)}
+.subtitle{text-align:center;color:var(--muted);margin-bottom:30px}
+.about-card,.edu-card{background:#fff;border-radius:18px;padding:28px;box-shadow:0 8px 25px rgba(0,0,0,.08)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:20px;text-align:center}
+.stat{background:#fff5f8;border-radius:14px;padding:18px}
+.stat b{font-size:28px;color:var(--pink);display:block}
+/* PROJECTS */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,.08);transition:.3s}
+.card:hover{transform:translateY(-6px)}
+.card-top{padding:22px;color:#fff;font-size:22px;font-weight:800}
+.c1{background:linear-gradient(135deg,#7c3aed,#ff2e88)}.c2{background:linear-gradient(135deg,#06b6d4,#3b82f6)}.c3{background:linear-gradient(135deg,#ec4899,#f43f5e)}.c4{background:linear-gradient(135deg,#22c55e,#16a34a)}.c5{background:linear-gradient(135deg,#f59e0b,#ef4444)}.c6{background:linear-gradient(135deg,#8b5cf6,#6366f1)}.c7{background:linear-gradient(135deg,#f97316,#eab308)}
+.card-body{padding:20px}
+.card-body p{color:#555;font-size:15px;margin:8px 0 16px}
+.tags span{background:#f1f1f1;padding:5px 10px;border-radius:20px;font-size:12px;margin-right:5px}
+/* SKILLS / CONTACT */
+.skills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.skills span{background:#111;color:#fff;padding:10px 18px;border-radius:30px;font-weight:600}
+table{width:100%;border-collapse:collapse;margin-top:15px}
+th,td{padding:12px;border-bottom:1px solid #eee;text-align:left}
+th{background:#fff5f8}
+.contact{background:linear-gradient(135deg,#0f0f1a,#7c3aed);color:#fff;text-align:center;border-radius:20px;padding:35px}
+footer{text-align:center;padding:20px;color:#888;font-size:14px}
+@media(max-width:600px){.hero h1{font-size:36px}.stats{grid-template-columns:1fr}}
