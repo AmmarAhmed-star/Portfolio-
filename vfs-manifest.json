@@ -1,0 +1,56 @@
+[
+  {
+    "path": "App.tsx",
+    "file": {
+      "file_name": "/mnt/data/src/App.tsx",
+      "storage_handle": "",
+      "storage_type": "BASE64"
+    }
+  },
+  {
+    "path": "assets/fcda0b9a8b21e3b2-photo1054677565760640401.jpeg",
+    "file": {
+      "file_name": "photo1054677565760640401.jpeg",
+      "storage_handle": "",
+      "storage_type": "MANIFOLD",
+      "fbid": 1149017727604047,
+      "mime": "image/jpeg",
+      "source_identifiers": [
+        {
+          "type": "typed_fbid",
+          "value": {
+            "fbid": 1149017727604047,
+            "fbtype": 71334
+          }
+        },
+        {
+          "type": "url",
+          "value": "safetynet_input_media://2ecd82ac03d345a5814d5965c384eb7d"
+        }
+      ],
+      "media_origin": "USER_UPLOAD"
+    }
+  },
+  {
+    "path": "index.css",
+    "file": {
+      "file_name": "/mnt/data/src/index.css",
+      "storage_handle": "",
+      "storage_type": "BASE64",
+      "source_identifiers": [
+        {
+          "type": "url",
+          "value": "https://www.h.metaaiusercontent.com/app/maiwa-p-c46cd89fbade8617e0b2c68b10468e8a1c65a72054343211/actions"
+        }
+      ],
+      "source_tools": [
+        "container.build_react_artifact",
+        "container.create",
+        "container.create_web_artifact_agent_stateful",
+        "container.edit_file",
+        "container.validate_react_artifact",
+        "container.view"
+      ]
+    }
+  }
+]
