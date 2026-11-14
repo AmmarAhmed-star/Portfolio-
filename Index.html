@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ammar Ahmed | Python | React | Android Developer</title>
+<meta name="description" content="Ammar Ahmed - BCA Student, Python React Android Developer. 6 Live Projects.">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Plus Jakarta Sans',sans-serif}
+body{background:#fff7ed;color:#1a1a1a;line-height:1.6}
+a{text-decoration:none}
+.container{max-width:1100px;margin:auto;padding:0 20px}
+/* HERO */
+.hero{background:linear-gradient(135deg,#ff2e63 0%,#ff6a00 45%,#7c3aed 100%);color:white;text-align:center;padding:70px 20px 55px;border-radius:0 0 28px 28px}
+.hero img{width:128px;height:128px;border-radius:50%;object-fit:cover;border:5px solid white;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.hero h1{font-size:42px;margin:14px 0 4px;letter-spacing:-.5px}
+.hero h1 span{color:#ffe600}
+.hero .role{font-weight:700;opacity:.95}
+.hero p.tag{max-width:680px;margin:14px auto 22px;font-size:16px;opacity:.95}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:700;font-size:14px;margin:4px}
+.btn-white{background:white;color:#111}
+.btn-black{background:#111;color:white}
+.btn-outline{border:2px solid #111;color:#111;background:transparent}
+/* SECTION */
+section{padding:48px 0 10px}
+h2{font-size:28px;text-align:center;margin-bottom:6px}
+h2 span{color:#ff2e63}
+.sub{text-align:center;color:#666;margin-bottom:28px;font-size:15px}
+.about-box{background:#fff;border:1px solid #eee;border-radius:20px;padding:28px;box-shadow:0 8px 30px rgba(0,0,0,.05);max-width:850px;margin:auto}
+.about-box p{margin-bottom:12px;color:#333}
+.about-box b{color:#111}
+.pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px}
+.pill{background:#111;color:white;padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600}
+/* PROJECTS */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:800px){.grid{grid-template-columns:1fr 1fr}.hero h1{font-size:32px}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}}
+.card{background:white;border-radius:18px;overflow:hidden;border:1px solid #eee;box-shadow:0 6px 20px rgba(0,0,0,.05);display:flex;flex-direction:column}
+.card-top{padding:18px;color:white;min-height:92px}
+.c1{background:linear-gradient(135deg,#ec4899,#a855f7)} .c2{background:linear-gradient(135deg,#0ea5e9,#2563eb)} .c3{background:linear-gradient(135deg,#f43f5e,#fb7185)} .c4{background:linear-gradient(135deg,#16a34a,#22c55e)} .c5{background:linear-gradient(135deg,#f97316,#ea580c)} .c6{background:linear-gradient(135deg,#2563eb,#1e40af)}
+.card-top h3{font-size:19px}
+.card-top small{opacity:.9;font-weight:600}
+.card-body{padding:16px 18px 18px;flex:1;display:flex;flex-direction:column}
+.card-body p{font-size:14px;color:#555;flex:1;margin-bottom:14px}
+.live{display:inline-block;background:#dcfce7;color:#166534;font-size:11px;font-weight:800;padding:4px 8px;border-radius:999px;margin-bottom:10px}
+.card-btns{display:flex;gap:8px}
+.card-btns a{flex:1;text-align:center;padding:9px;border-radius:999px;font-size:13px;font-weight:700}
+.live-btn{background:#ff5a1f;color:white}
+.code-btn{background:#f1f5f9;color:#111}
+/* SKILLS */
+.edu{background:#fff;border:1px solid #eee;border-radius:18px;padding:22px;max-width:850px;margin:18px auto}
+.edu table{width:100%;border-collapse:collapse;font-size:14px}
+.edu th{text-align:left;color:#888;padding:8px;border-bottom:1px solid #eee}
+.edu td{padding:10px 8px;border-bottom:1px solid #f1f1f1}
+/* CONTACT */
+.contact{background:#1e1b4b;color:white;border-radius:22px;padding:36px 20px;text-align:center;margin:40px 0 30px}
+.contact h2{color:white}
+.contact p{opacity:.9;margin:10px auto 20px;max-width:600px}
+.contact .btn{margin:5px}
+footer{text-align:center;padding:20px;color:#888;font-size:13px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <!-- Apni photo ka link yaha daal de -->
+  <img src="https://via.placeholder.com/300" alt="Ammar Ahmed">
+  <h1>AMMAR AHMED <span>👑</span></h1>
+  <div class="role">Python | React | Android Developer</div>
+  <p class="tag">BCA Student jo sirf padhta nahi, real live apps banata hai. AI, Health aur Productivity pe 6 live projects banaye hai — sab GitHub Pages pe live hai.</p>
+  <a class="btn btn-white" href="#projects">View Projects ↓</a>
+  <a class="btn btn-black" href="#contact">Contact Me</a>
+</header>
+
+<div class="container">
+<section id="about">
+  <h2>About <span>Me</span></h2>
+  <p class="sub">BCA Student • Manipal University Jaipur (2023 - 2026)</p>
+  <div class="about-box">
+    <p>Hi, main <b>Ammar Ahmed</b> hu — BCA Student, Manipal University Jaipur.</p>
+    <p>Mujhe theory se zyada cheezein <b>bana kar seekhna</b> pasand hai. Isliye maine college projects ke saath-saath real users ke liye live web apps banaye hai — jaise AI learning app, Period & PCOS tracker, DSA Visualizer aur Expense Tracker.</p>
+    <p>Maine <b>Zidio Development Pvt. Ltd. me Web Development Intern (3 Months) ke roop me LOOP AI project pe kaam kiya hai — ek AI-powered learning / productivity web app banaya</b> ki hai, </p>
+    <p>Mera focus simple hai: <b>Clean UI + Real Functionality + Live Deployment.</b> Jo bhi banata hu, wo sirf screenshot me nahi, live chalta hai.</p>
+    <p><b>Currently:</b> Fresher / Internship ke liye open hu — Python, React aur Android me.</p>
+    <div class="pills"><span class="pill">SGPA 8.25</span><span class="pill">6 Live Projects</span><span class="pill">Zidio Internship • 3 Months</span></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>My <span>Projects</span> 🚀</h2>
+  <p class="sub">All projects are live — Click View Live</p>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-top c1"><h3>LOOP AI 🤖</h3><small>Python • AI</small></div>
+      <div class="card-body"><span class="live">● LIVE</span><p>AI-powered learning / productivity app. Zidio Development Pvt. Ltd. Internship Project. Feedback, progress aur smart suggestions ke saath.</p><div class="card-btns"><a class="live-btn" href="https://ammarahmed-star.github.io/LOOP-AI/" target="_blank">View Live ↗</a><a class="code-btn" href="https://github.com/ammarahmed-star/LOOP-AI" target="_blank">GitHub &lt;/&gt;</a></div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-top c2"><h3>DSA Visualizer 📊</h3><small>JavaScript • DSA</small></div>
+      <div class="card-body"><span class="live">● LIVE</span><p>Sorting aur DSA algorithms ko live animation ke saath samjho. Bubble, Selection, Insertion Sort — Compare, Swap sab live.</p><div class="card-btns"><a class="live-btn" href="https://ammarahmed-star.github.io/DSA-Visualizer/" target="_blank">View Live ↗</a><a class="code-btn" href="https://github.com/ammarahmed-star/DSA-Visualizer" target="_blank">GitHub &lt;/&gt;</a></div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-top c3"><h3>CycleCare ❤️</h3><small>Android • Health</small></div>
+      <div class="card-body"><span class="live">● LIVE</span><p>Women's wellness companion. Period tracker, PCOS management, Symptoms aur Daily Habits — sab ek jagah.</p><div class="card-btns"><a class="live-btn" href="https://ammarahmed-star.github.io/PCOS-Management-Application/" target="_blank">View Live ↗</a><a class="code-btn" href="https://github.com/ammarahmed-star/PCOS-Management-Application" target="_blank">GitHub &lt;/&gt;</a></div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-top c4"><h3>Fresh Fruits Web 🍎</h3><small>HTML • CSS • JS</small></div>
+      <div class="card-body"><span class="live">● LIVE</span><p>Fresh fruits online store. Search, filter, cart aur 20% OFF Mango offer ke saath. Web + Android version available.</p><div class="card-btns"><a class="live-btn" href="https://ammarahmed-star.github.io/Fresh-Fruits-Web-page/" target="_blank">View Live ↗</a><a class="code-btn" href="https://github.com/ammarahmed-star/Fresh-Fruits-Web-page" target="_blank">GitHub &lt;/&gt;</a></div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-top c5"><h3>Expense Tracker 💰</h3><small>Android • Finance</small></div>
+      <div class="card-body"><span class="live">● LIVE</span><p>Daily kharcha track karo — Income, Expense aur Balance ek hi screen pe. Chai se leke Petrol tak sab hisaab.</p><div class="card-btns"><a class="live-btn" href="https://ammarahmed-star.github.io/Android-Expense-Tracker/" target="_blank">View Live ↗</a><a class="code-btn" href="https://github.com/ammarahmed-star/Android-Expense-Tracker" target="_blank">GitHub &lt;/&gt;</a></div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-top c6"><h3>Notes + To-Do 📝</h3><small>Android • Productivity</small></div>
+      <div class="card-body"><span class="live">● LIVE</span><p>Notes likho aur daily tasks manage karo. Simple, fast aur kaam ka app.</p><div class="card-btns"><a class="live-btn" href="https://ammarahmed-star.github.io/Notes-ToDo/" target="_blank">View Live ↗</a><a class="code-btn" href="https://github.com/ammarahmed-star/Notes-ToDo" target="_blank">GitHub &lt;/&gt;</a></div></div>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills & <span>Education</span></h2>
+  <div class="pills"><span class="pill">Python</span><span class="pill">JavaScript</span><span class="pill">React</span><span class="pill">Android</span><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">Java</span><span class="pill">GitHub</span><span class="pill">Git</span></div>
+  <div class="edu">
+    <table>
+      <tr><th>Course</th><th>College</th><th>Year</th><th>Score</th></tr>
+      <tr><td>BCA</td><td>Manipal University Jaipur</td><td>2023 - 2026</td><td><b>SGPA 8.25</b></td></tr>
+    </table>
+    <p style="margin-top:12px;font-size:14px"><b>Internship:</b> Zidio Development Pvt. Ltd. — Web Development Intern (3 Months) | LOOP AI Project</p>
+  </div>
+</section>
+
+<div class="contact" id="contact">
+  <h2>Let's Work Together 🤝</h2>
+  <p>Koi internship, fresher role ya project hai? Baat karte hai.</p>
+  <!-- Yaha apne asli link daal de -->
+  <a class="btn btn-white" href="mailto:ammarahmed4950@gmail.com">Email Me</a>
+  <a class="btn btn-white" href="https://www.linkedin.com/in/ammar-ahmed-676825422" target="_blank">LinkedIn</a>
+  <a class="btn btn-white" href="https://github.com/ammarahmed-star" target="_blank">GitHub</a>
+  <a class="btn btn-black" style="background:#ff5a1f" href="resume.pdf" target="_blank">Download Resume ↓</a>
+</div>
+
+<footer>Made with ❤️ by Ammar Ahmed • Live on GitHub Pages • 2026</footer>
+</div>
+</body>
+</html>
