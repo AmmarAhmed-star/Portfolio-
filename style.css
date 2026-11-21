@@ -1,42 +1,202 @@
 /* Ammar Ahmed - Portfolio | style.css */
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,Arial,sans-serif}
-:root{--pink:#ff2e88;--orange:#ff7a18;--purple:#7c3aed;--dark:#0f0f1a;--card:#ffffff;--muted:#666}
-body{background:#fff5f8;color:#222;line-height:1.6}
-a{text-decoration:none;color:inherit}
-.container{max-width:1100px;margin:auto;padding:0 20px}
-/* HERO */
-.hero{background:linear-gradient(135deg,#ff2e88,#ff7a18,#7c3aed);color:#fff;padding:50px 0 60px;text-align:center}
-.hero img.profile{width:170px;height:170px;object-fit:cover;border-radius:50%;border:6px solid #fff;box-shadow:0 10px 30px rgba(0,0,0,.3)}
-.hero h1{font-size:52px;letter-spacing:1px;margin-top:15px}
-.hero h1 span{color:#ffe600}
-.hero p.tagline{font-size:20px;opacity:.95;margin:8px 0 20px}
-.btn{display:inline-block;background:#fff;color:#ff2e88;font-weight:700;padding:12px 26px;border-radius:30px;margin:5px}
-.btn.dark{background:#111;color:#fff}
-.btn.live{background:linear-gradient(90deg,#ff2e88,#ff7a18);color:#fff}
-/* SECTIONS */
-section{padding:50px 0}
-h2{font-size:32px;text-align:center;margin-bottom:8px}
-h2 span{color:var(--pink)}
-.subtitle{text-align:center;color:var(--muted);margin-bottom:30px}
-.about-card,.edu-card{background:#fff;border-radius:18px;padding:28px;box-shadow:0 8px 25px rgba(0,0,0,.08)}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:20px;text-align:center}
-.stat{background:#fff5f8;border-radius:14px;padding:18px}
-.stat b{font-size:28px;color:var(--pink);display:block}
-/* PROJECTS */
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,.08);transition:.3s}
-.card:hover{transform:translateY(-6px)}
-.card-top{padding:22px;color:#fff;font-size:22px;font-weight:800}
-.c1{background:linear-gradient(135deg,#7c3aed,#ff2e88)}.c2{background:linear-gradient(135deg,#06b6d4,#3b82f6)}.c3{background:linear-gradient(135deg,#ec4899,#f43f5e)}.c4{background:linear-gradient(135deg,#22c55e,#16a34a)}.c5{background:linear-gradient(135deg,#f59e0b,#ef4444)}.c6{background:linear-gradient(135deg,#8b5cf6,#6366f1)}.c7{background:linear-gradient(135deg,#f97316,#eab308)}
-.card-body{padding:20px}
-.card-body p{color:#555;font-size:15px;margin:8px 0 16px}
-.tags span{background:#f1f1f1;padding:5px 10px;border-radius:20px;font-size:12px;margin-right:5px}
-/* SKILLS / CONTACT */
-.skills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
-.skills span{background:#111;color:#fff;padding:10px 18px;border-radius:30px;font-weight:600}
-table{width:100%;border-collapse:collapse;margin-top:15px}
-th,td{padding:12px;border-bottom:1px solid #eee;text-align:left}
-th{background:#fff5f8}
-.contact{background:linear-gradient(135deg,#0f0f1a,#7c3aed);color:#fff;text-align:center;border-radius:20px;padding:35px}
-footer{text-align:center;padding:20px;color:#888;font-size:14px}
-@media(max-width:600px){.hero h1{font-size:36px}.stats{grid-template-columns:1fr}}
+/* Aqua Blue Glass Theme #22D3EE - iOS Transparent - Portfolio- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Inter,system-ui,Segoe UI,Roboto,Arial;
+  min-height:100vh;
+  background:linear-gradient(135deg,#E0F2FE 0%,#22D3EE 100%);
+  color:#0F172A;
+  position:relative
+}
+
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  z-index:0;
+  background:
+    radial-gradient(700px 400px at 15% 10%,rgba(34,211,238,.55),transparent),
+    radial-gradient(700px 400px at 85% 20%,rgba(186,230,253,.7),transparent),
+    radial-gradient(600px 500px at 50% 85%,rgba(6,182,212,.35),transparent);
+  pointer-events:none
+}
+
+body *{position:relative;z-index:1}
+
+/* Nav - Glass */
+.nav{
+  position:sticky;
+  top:0;
+  z-index:20;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 22px;
+  margin:14px;
+  border-radius:20px;
+  background:rgba(255,255,255,.30);
+  backdrop-filter:blur(30px) saturate(180%);
+  -webkit-backdrop-filter:blur(30px) saturate(180%);
+  border:1px solid rgba(255,255,255,.5);
+  box-shadow:0 8px 32px rgba(0,0,0,.12),inset 0 1px 0 rgba(255,255,255,.7)
+}
+
+.logo{font-weight:900;font-size:18px}
+.logo span{color:#0EA5E9}
+
+.badge-aqua{
+  font-size:10px;
+  padding:6px 12px;
+  border-radius:999px;
+  background:rgba(255,255,255,.45);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.6);
+  font-weight:800;
+  letter-spacing:.5px
+}
+
+/* Hero */
+.hero{
+  max-width:1160px;
+  margin:0 auto;
+  padding:20px 24px 0;
+  text-align:center
+}
+
+.hero h1{
+  font-size:48px;
+  margin:0;
+  line-height:.9;
+  letter-spacing:-1.5px;
+  font-weight:900;
+  color:#fff;
+  text-shadow:0 2px 20px rgba(0,0,0,.15)
+}
+
+.hero h1 span{
+  background:linear-gradient(90deg,#0EA5E9,#22D3EE);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  filter:drop-shadow(0 2px 10px rgba(34,211,238,.3))
+}
+
+.hero p{
+  color:rgba(255,255,255,.92);
+  max-width:760px;
+  margin:14px auto;
+  line-height:1.7;
+  font-weight:500;
+  text-shadow:0 1px 10px rgba(0,0,0,.1)
+}
+
+/* Buttons */
+.btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+
+.btn{
+  padding:12px 20px;
+  border-radius:999px;
+  font-weight:800;
+  border:0;
+  cursor:pointer;
+  text-decoration:none;
+  display:inline-block;
+  backdrop-filter:blur(10px);
+  transition:.2s;
+  box-shadow:0 4px 16px rgba(0,0,0,.1)
+}
+
+.btn.dark{background:rgba(0,0,0,.85);color:#fff}
+.btn.aqua{background:linear-gradient(90deg,#06B6D4,#22D3EE);color:#fff;box-shadow:0 8px 20px rgba(34,211,238,.3)}
+.btn:hover{transform:translateY(-2px)}
+
+/* Wrap & Cards - Glass */
+.wrap{max-width:1160px;margin:0 auto;padding:12px 24px 40px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+
+.card{
+  background:rgba(255,255,255,.38);
+  backdrop-filter:blur(30px) saturate(180%);
+  -webkit-backdrop-filter:blur(30px) saturate(180%);
+  border:1px solid rgba(255,255,255,.55);
+  border-radius:24px;
+  padding:20px;
+  box-shadow:0 8px 32px rgba(0,0,0,.1),inset 0 1px 0 rgba(255,255,255,.7);
+  transition:.25s
+}
+
+.card:hover{
+  transform:translateY(-3px);
+  background:rgba(255,255,255,.5);
+  box-shadow:0 16px 40px rgba(0,0,0,.14),inset 0 1px 0 rgba(255,255,255,.8)
+}
+
+.badge{
+  display:inline-block;
+  padding:6px 12px;
+  border-radius:999px;
+  font-size:11px;
+  font-weight:800;
+  margin-bottom:8px;
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.4)
+}
+
+.badge.ai{background:rgba(124,58,237,.15);color:#5B21B6}
+.badge.dsa{background:rgba(16,185,129,.15);color:#065F46}
+.badge.health{background:rgba(244,63,94,.12);color:#9F1239}
+.badge.expense{background:rgba(6,182,212,.15);color:#0E7490}
+.badge.todo{background:rgba(168,85,247,.12);color:#6B21A8}
+.badge.local{background:rgba(34,211,238,.2);color:#0E7490}
+
+.card h3{margin:6px 0 6px;font-size:20px;font-weight:800}
+.card p{color:#334155;font-size:13.5px;line-height:1.6;margin:0;font-weight:500}
+
+.tags{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+.tag{padding:6px 10px;background:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.6);border-radius:999px;font-size:11px;font-weight:700}
+
+.links{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+.links a{padding:9px 14px;border-radius:999px;background:rgba(0,0,0,.85);color:#fff;text-decoration:none;font-size:13px;font-weight:800}
+.links a.light{background:rgba(255,255,255,.6);color:#0F172A;border:1px solid rgba(255,255,255,.6)}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+.stat{
+  background:rgba(255,255,255,.38);
+  backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,.5);
+  border-radius:18px;
+  padding:18px;
+  text-align:center;
+  box-shadow:0 4px 20px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.6)
+}
+.stat b{font-size:22px;display:block}
+.stat span{font-size:12px;color:#475569;font-weight:600}
+
+/* Section */
+.section{
+  background:rgba(255,255,255,.30);
+  backdrop-filter:blur(24px);
+  border:1px solid rgba(255,255,255,.45);
+  border-radius:20px;
+  padding:18px;
+  margin-top:18px;
+  box-shadow:0 8px 32px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.6)
+}
+
+.footer{
+  text-align:center;
+  padding:28px;
+  color:rgba(255,255,255,.85);
+  font-size:13px;
+  text-shadow:0 1px 8px rgba(0,0,0,.1)
+}
+
+@media(max-width:780px){
+  .hero h1{font-size:34px}
+  .grid,.stats{grid-template-columns:1fr}
+}
