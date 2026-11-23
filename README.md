@@ -19,7 +19,7 @@
 | 3 | **CycleCare / PCOS App ❤️** | Health • Wellness | PWA, 13 Features | [Live](https://ammarahmed-star.github.io/PCOS---Management---Application/) | [Code](https://github.com/AmmarAhmed-star/PCOS---Management---Application) |
 | 4 | **Expense Tracker 💰** | Android • Finance | Kotlin, Room, MVVM | [Live](https://ammarahmed-star.github.io/Expense-Tracker---Android/) | [Code](https://github.com/AmmarAhmed-star/Expense-Tracker---Android) |
 | 5 | **Notes + To-Do 📝** | Android • Productivity | Kotlin, Room | [Live](https://ammarahmed-star.github.io/Notes---Todo---Android/) | [Code](https://github.com/AmmarAhmed-star/Notes---Todo---Android) |
-| 6 | **Malegaon Local 📍 NEW** | Local Business Finder | Kotlin, Firebase | [Live](https://ammarahmed-star.github.io/Malegaon-Local/) | [Code](https://github.com/AmmarAhmed-star/Malegaon-Local) |
+| 6 | **My City Business finder app 📍 NEW** | Local Business Finder | Kotlin, Firebase | [Live](https://ammarahmed-star.github.io/Malegaon-Local/) | [Code](https://github.com/AmmarAhmed-star/Malegaon-Local) |
 
 ---
 
